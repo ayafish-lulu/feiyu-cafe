@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>啡屿 · 精品咖啡馆</title>
+    <meta name="description" content="啡屿 — 在城市角落，遇见一杯有温度的咖啡。精品手冲、意式咖啡与手工甜点。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">啡屿</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">首页</a></li>
+                <li><a href="#story">故事</a></li>
+                <li><a href="#menu">菜单</a></li>
+                <li><a href="#gallery">光影</a></li>
+                <li><a href="#contact">抵达</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">Est. 2023</div>
+            <h1 class="hero-title">在城市角落<br>遇见一杯温度</h1>
+            <p class="hero-subtitle">精品手冲 · 意式咖啡 · 手工甜点</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">探索菜单</a>
+                <a href="#contact" class="btn btn-outline">联系我们</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>向下探索</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+    <section class="story" id="story">
+        <div class="container">
+            <div class="section-label">Our Story</div>
+            <h2 class="section-title">每一杯，都是时间的礼物</h2>
+            <div class="story-grid">
+                <div class="story-image">
+                    <div class="story-img-placeholder">
+                        <div class="img-decorative-circle"></div>
+                        <div class="img-inner">
+                            <span class="img-emoji">🌿</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-text">
+                    <p class="story-paragraph">2023 年深秋，我们在老城区的梧桐树下开了这家小店。这里没有喧嚣的音乐，只有咖啡机低沉的轰鸣与杯碟轻碰的脆响。</p>
+                    <p class="story-paragraph">每一颗豆子都由主理人亲自挑选、烘焙，从埃塞俄比亚的花果香到哥伦比亚的坚果醇厚，我们相信好的咖啡不需要复杂的解释——你喝到的，就是产地的语言。</p>
+                    <div class="story-stats">
+                        <div class="stat"><span class="stat-number" data-target="36">0</span><span class="stat-label">精选单品豆</span></div>
+                        <div class="stat"><span class="stat-number" data-target="2800">0</span><span class="stat-label">服务顾客</span></div>
+                        <div class="stat"><span class="stat-number" data-target="95">0</span><span class="stat-label">好评率 %</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="philosophy">
+        <div class="container">
+            <blockquote class="philosophy-quote">
+                <span class="quote-mark">"</span>咖啡是一期一会的事。同样的豆子、同样的手法，今天的这一杯，永远不会和明天的一样。<span class="quote-mark quote-end">"</span>
+            </blockquote>
+            <p class="philosophy-author">— 主理人 · 阿远</p>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-label">Signature</div>
+            <h2 class="section-title">我们的招牌</h2>
+            <p class="section-desc">每一杯都经过反复调试，只为呈现最完美的风味</p>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="coffee">咖啡</button>
+                <button class="menu-tab" data-category="special">特调</button>
+                <button class="menu-tab" data-category="dessert">甜点</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <div class="menu-card" data-category="coffee">
+                    <div class="menu-card-img"><span class="menu-emoji">☕</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>日晒耶加雪菲</h3><span class="menu-price">¥42</span></div>
+                        <p>埃塞俄比亚 · 古伎产区 · 柠檬、茉莉花、蜂蜜余韵</p>
+                        <span class="menu-badge">主厨推荐</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="coffee">
+                    <div class="menu-card-img"><span class="menu-emoji">☕</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>哥伦比亚蕙兰</h3><span class="menu-price">¥38</span></div>
+                        <p>哥伦比亚 · 蕙兰产区 · 焦糖、坚果、巧克力</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="coffee">
+                    <div class="menu-card-img"><span class="menu-emoji">☕</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>经典拿铁</h3><span class="menu-price">¥32</span></div>
+                        <p>深烘意式基底 · 鲜牛奶 · 绵密奶泡 · 可选燕麦奶</p>
+                        <span class="menu-badge">人气 TOP</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="special">
+                    <div class="menu-card-img"><span class="menu-emoji">🧊</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>青柠薄荷冷萃</h3><span class="menu-price">¥36</span></div>
+                        <p>冷萃 24 小时 · 鲜青柠 · 薄荷叶 · 夏日限定</p>
+                        <span class="menu-badge">季节限定</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="special">
+                    <div class="menu-card-img"><span class="menu-emoji">🍵</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>桂花燕麦拿铁</h3><span class="menu-price">¥35</span></div>
+                        <p>干桂花 · 燕麦奶 · 意式浓缩 · 秋日暖香</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="special">
+                    <div class="menu-card-img"><span class="menu-emoji">🍊</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>橙香气泡美式</h3><span class="menu-price">¥34</span></div>
+                        <p>鲜榨橙汁 · 气泡水 · 浓缩咖啡 · 清爽微甜</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-img"><span class="menu-emoji">🍰</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>巴斯克芝士蛋糕</h3><span class="menu-price">¥38</span></div>
+                        <p>奶油芝士 · 焦糖表面 · 绵密湿润 · 每日手作</p>
+                        <span class="menu-badge">招牌甜点</span>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-img"><span class="menu-emoji">🍪</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>巧克力软曲奇</h3><span class="menu-price">¥18</span></div>
+                        <p>法芙娜巧克力 · 海盐 · 外酥内软</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-img"><span class="menu-emoji">🥐</span></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3>焦糖杏仁可颂</h3><span class="menu-price">¥28</span></div>
+                        <p>法式起酥 · 焦糖杏仁 · 搭配奶油</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-label">Moments</div>
+            <h2 class="section-title">光影之间</h2>
+            <p class="section-desc">一些温暖片刻，想和你分享</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item gallery-item-tall"><div class="gallery-placeholder" style="background:linear-gradient(135deg,#4A2C2A,#2C1810)"><span class="gallery-emoji">🌅</span><span class="gallery-label">晨间阳光</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder" style="background:linear-gradient(135deg,#C8A45C,#D4A574)"><span class="gallery-emoji">🌿</span><span class="gallery-label">绿植角落</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder" style="background:linear-gradient(135deg,#8B6914,#6B4F12)"><span class="gallery-emoji">☕</span><span class="gallery-label">手冲时光</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder" style="background:linear-gradient(135deg,#D4A574,#F5E6D3)"><span class="gallery-emoji">📚</span><span class="gallery-label">阅读角落</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder" style="background:linear-gradient(135deg,#3D2B1F,#5C4033)"><span class="gallery-emoji">🌙</span><span class="gallery-label">夜晚灯光</span></div></div>
+            <div class="gallery-item gallery-item-wide"><div class="gallery-placeholder" style="background:linear-gradient(135deg,#2C1810,#4A2C2A)"><span class="gallery-emoji">🎵</span><span class="gallery-label">音乐之夜</span></div></div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-label">Visit Us</div>
+                    <h2 class="section-title">期待相遇</h2>
+                    <div class="contact-details">
+                        <div class="contact-item"><span class="contact-icon">📍</span><div><h4>地址</h4><p>上海市徐汇区梧桐路 128 号<br>啡屿咖啡馆</p></div></div>
+                        <div class="contact-item"><span class="contact-icon">🕐</span><div><h4>营业时间</h4><p>周一至周五 08:00 – 20:00<br>周六至周日 09:00 – 21:00</p></div></div>
+                        <div class="contact-item"><span class="contact-icon">📞</span><div><h4>电话</h4><p>021-1234-5678</p></div></div>
+                        <div class="contact-item"><span class="contact-icon">✉️</span><div><h4>邮箱</h4><p>hello@feiyu.cafe</p></div></div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <div class="map-pin">📍</div>
+                        <p>上海市徐汇区梧桐路 128 号</p>
+                        <p class="map-hint">梧桐树下的转角处</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reservation-cta">
+        <div class="container">
+            <div class="cta-card">
+                <h2>预订你的专属时光</h2>
+                <p>朋友聚会、生日派对、商务洽谈 —— 我们为你预留最舒适的角落</p>
+                <a href="tel:021-1234-5678" class="btn btn-primary">立即预订 →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo"><span class="logo-icon">☕</span><span class="logo-text">啡屿</span></a>
+                    <p>在城市角落，遇见一杯有温度的咖啡。</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="微信">💬</a>
+                        <a href="#" class="social-link" aria-label="小红书">📕</a>
+                        <a href="#" class="social-link" aria-label="微博">📱</a>
+                        <a href="#" class="social-link" aria-label="大众点评">⭐</a>
+                    </div>
+                </div>
+                <div class="footer-links"><h4>快速链接</h4><ul><li><a href="#story">我们的故事</a></li><li><a href="#menu">菜单</a></li><li><a href="#gallery">光影集</a></li><li><a href="#contact">联系我们</a></li></ul></div>
+                <div class="footer-links"><h4>服务</h4><ul><li><a href="#">场地租赁</a></li><li><a href="#">咖啡课程</a></li><li><a href="#">企业团建</a></li><li><a href="#">豆子订购</a></li></ul></div>
+                <div class="footer-newsletter">
+                    <h4>订阅动态</h4>
+                    <p>获取新品首发与活动资讯</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('感谢订阅！');"><input type="email" placeholder="输入你的邮箱" required><button type="submit">→</button></form>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 啡屿咖啡馆 Feiyu Cafe. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
